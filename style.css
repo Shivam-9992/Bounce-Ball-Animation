@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #ff1515;
+    border-radius: 3em;
+    position: absolute;
+    animation: forward linear 5s infinite,
+        bounce ease-out 1s infinite alternate;
+}
+
+@keyframes forward {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 95%
+    }
+}
+
+@keyframes bounce {
+    from {
+        bottom: 10%;
+    }
+
+    to {
+        bottom: 70%;
+    }
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #000;
+}
